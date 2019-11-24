@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style type="text/css">
+	
+	*/*{
+		box-sizing: border-box;
+	}*/
+	/*body,html{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #ddd;
+		width: 100%;
+		height: 100%;
+	}*/
+	.team-area{
+		display: flex;
+		width: 90%;
+		justify-content: space-around;
+	}
+	.single-team{
+		width: 360px;
+		height: 400px;
+		padding: 24px;
+		background-color: #fff;
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		transition: .6s ease-out;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+
+	}
+	.single-team:hover{
+		transform: translateY(15px);
+	}
+	.single-team:hover:before{
+		opacity: 1;
+	}
+	.single-team:hover .team-text{
+    opacity: 1;
+    transform: translateY(0);
+}
+.single-team:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(to top,transparent,#000000);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+
+    }
+    .single-team img{
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	object-fit: cover;
+    }
+    .single-team .team-next{
+    	position: relative;
+    	z-index: 3;
+    	color: #fff;
+    	opacity: 0;
+    	transform: translateY(60px);
+    	transition: 0.5s;
+
+    }
+    .team-text h2{
+    	margin: 0;
+    	font-family: shrikhand;
+    	letter-spacing: 3px;
+    	color: white;
+
+    }
+    .team-text p{
+    	letter-spacing: 1px;
+    	font-size: 15px;
+    	margin-top:8px;
+    	font-family: poppins;
+
+    }
+    .team-text a{
+    	width: 30px;
+    	height: 30px;
+    	display: inline-block;
+    	border: 1px solid #fff;
+    	border-radius: 50%;
+    	margin: 0 5px;
+    	text-decoration: none;
+    }
+    .team-text a i{
+    	color: #fff;
+    	padding: 6px 8px;
+    }
+
+	</style>
+
+</head>
+<body>
+<div class="team-area">
+	<div class="single-team">
+		<img src="img1.jpg" alt="">
+		<div class="team-text">
+			<h2>laura</h2>
+			<p>worde press</p>
+			<p>
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href=""><i class="fa fa-linkedin"></i></a>
+				<a href=""><i class="fa fa-envelope"></i></a>
+			</p>
+		</div>
+
+	</div>
+	<div class="single-team">
+		<img src="img1.jpg" alt="">
+		<div class="team-text">
+			<h2>laura</h2>
+			<p>worde press</p>
+			<p>
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href=""><i class="fa fa-linkedin"></i></a>
+				<a href=""><i class="fa fa-envelope"></i></a>
+			</p>
+		</div>
+
+	</div>
+	<div class="single-team">
+		<img src="img1.jpg" alt="">
+		<div class="team-text">
+			<h2>laura</h2>
+			<p>worde press</p>
+			<p>
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href=""><i class="fa fa-linkedin"></i></a>
+				<a href=""><i class="fa fa-envelope"></i></a>
+			</p>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

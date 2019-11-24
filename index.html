@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+	<title>cenoung</title>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+ <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script> 
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('#fullpage').fullpage({
+		sectionsColor : ['W', '#ffffff','#000000','#222222','#000000'],
+		css3: true
+	});
+});
+</script>
+
+ 
+<style type="text/css">
+	.section{
+/*		font-size: 6em;
+		text-align: center;
+*/	}
+	.head{
+        width: 100%;
+        height: 87px;
+        /*background-image: url('topblack.png'); */
+        margin-top: 0;
+        margin-left: 0;
+        color:#000;
+        background-color:#fff;
+        /*
+        background-image: linear-gradient(#1D9D08,#41C12B,#59E442);*/
+        border-bottom:1px solid #eee; 
+	}
+	.title{
+		font-size: 55px;
+		color: #000;
+		margin-top: 0px;
+        font-family: cursive;
+		margin-left: 11%;
+
+	}
+	.title a{
+		text-decoration: none;
+		color: #cccccc;
+	}
+	.headlist{
+		list-style-type: none;
+		display:inline-flex;
+		margin-top: 0%;
+		margin-left: 17%;
+        color: #000;
+		
+		font-size: 17px;
+	}
+	.head ul li{
+		margin-left: 5%;
+		font-family: sans-serif;
+        
+	}
+	.head ul li a{
+		color: #ffffff;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+	.head ul li a:hover{
+		color: #59E442;
+		/*font-size: 16px;*/
+		font-weight: bold;
+
+	}
+
+	#slide2{
+		background:url('video.gif');
+
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    .user{
+    	color: white;
+    	font-size: 20px;
+
+    }
+
+    .circle{
+    	color: white;
+    	font-size: 245px;
+    }
+
+
+
+    .box3{
+    	width: 230px;
+    	height: 248px;
+    	padding-top: 24px;
+    	padding-bottom: 20px;
+    	padding-left: 40px;
+    	padding-right: 25px;
+    	margin-left: 14%;
+    	margin-top: 10%;
+    	background-color:#59E442; 
+    }
+
+    .box4{
+    	width: 620px;
+    	height: 255px;
+
+    	padding-top: 30px;
+    	padding-bottom: 8px;
+    	padding-left: 26px;
+    	padding-right: 22px;
+    	margin-left: 33.4%;
+    	margin-top: -19%;
+    	background-color:rgba(0,0,0,0.8);
+    }
+
+     
+
+     #clock{
+			display: flex;
+			width: 470px;
+			margin: 0 0;
+
+		}
+		#clock div{
+		    position: relative;
+		    width: 100px;
+		    padding: 20px;
+		    margin: 0 8px;
+		    background: #262626;
+		    color: #fff;
+		    border: 2px solid #000;	
+		}
+		#clock div:last-child{
+			background: #59E442;
+		}
+		#clock div:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			background: rgba(255,255,255,.2);
+		}
+		#clock div span{
+			display: block;
+			text-align: center;
+
+		}
+		#clock div span:nth-child(1){
+			font-size: 48px;
+			font-weight: 800;
+		}
+		#clock div span:nth-child(2){
+			font-size: 18px;
+			font-weight: 800;
+			margin-top: -10px;
+		}
+.headlist li a{
+    color: #000;
+}
+
+
+
+    .box5{
+    	width: 200px;
+    	height: 420px;
+    	padding-top: 20px;
+       
+    	padding-bottom: 8px;
+    	padding-left: 36px;
+    	padding-right: 22px;
+    	margin-left: 2%;
+    	margin-top: -15%;
+    	background-color:#59E442;
+    }
+
+    .box6{
+    	width: 330px;
+    	height: 405px;
+
+    	padding-top: 30px;
+    	padding-bottom: 8px;
+    	padding-left: 26px;
+    	padding-right: 22px;
+    	margin-left: 25%;
+    	margin-top: -38.35%;
+    	background-color:rgba(0,0,0,0.8);
+    }
+
+    .input1{
+    	font-size: 16px;
+    	padding: 10px;
+    	width: 50%;
+
+    }
+    .btn{
+    	font-size: 25px;
+    	padding:12px 27px;
+    	color: white;
+    	border: 2px solid #59E442;
+    	background-color:#59E442;
+    	transition: 1s;
+    }
+    .btn:hover{
+    	cursor: pointer;
+    	background-color: white;
+    	color: #59E442;
+    }
+
+
+    .foot{
+    	width: 100%;
+    	height: 14.2%;
+    	margin-top: 17%;
+    	background-color: rgba(0,0,0,0.8);
+    }
+    
+
+
+    .foot2{
+    	width: 100%;
+    	height: 14.2%;
+    	margin-top: 6.5%;
+    	background-color: rgba(0,0,0,0.8);
+    }
+
+
+    .foot3{
+    	width: 100%;
+    	height: 14.2%;
+    	margin-top: 4%;
+    	background-color: rgba(0,0,0,0.8);
+    }
+    .calm{
+    	padding-top: 20px;
+    	margin-left: 13%;
+    }
+    .cal{
+    	color: white;
+    	font-size: 40px;
+    }
+    .calm1{
+    	margin-left: 16.8%;
+    	margin-top: -2.4%;
+    }
+    .calm2{
+    	margin-top: -2.7%;
+    	margin-left:31%;
+    }
+    .calm3{
+    	margin-left: 34.8%;
+    	margin-top: -2.6%;
+    }
+
+    .calm4{
+    	margin-top: -2.7%;
+    	margin-left:62%;
+    }
+    .calm5{
+    	margin-left: 67%;
+    	margin-top: -2.6%;
+    }
+
+    .calm6{
+    	margin-top: -2.7%;
+    	margin-left:78%;
+    }
+    .calm7{
+    	margin-left: 82%;
+    	margin-top: -2.6%;
+    }
+    .hr1{
+    	width: 35%;
+    	height: 2%;
+    	color: white;
+        margin-top: -12%;
+    }
+    .plane{
+    	font-size: 95px;
+    	color: #59E442;
+    }
+
+     /*speakers*/
+
+
+    .team-area2{
+		display: flex;
+		width: 78%;
+		justify-content: space-around;
+		margin-left: 11.4%;
+		margin-top:3.2%; 
+	}
+	
+.container {
+    position: relative;
+    width: 220px;
+    height: 260px;
+    display: inline-block;
+}
+
+.image {
+    display: block;
+    width: 220px;
+    height: 260px;
+}
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #ff946bbd;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .6s ease;
+    background-color: #008cba;
+}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 0.86;
+}
+
+.overlayLeft{
+    height: 100%;
+    width:0;
+    top:0;
+    left:0;
+    background-color: #00b1ba;
+}
+.overlayRight{
+    height: 100%;
+    width: 0;
+    top:0;
+    right:0;
+    background-color: #12888e;
+}
+.container:hover .overlayLeft ,.container:hover .overlayRight {
+    width: 100%;
+}
+.overlayTop{
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #d63c58;
+}
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+    background-color: #941e33;
+}
+.container:hover .overlayTop ,.container:hover .overlayBottom {
+    height: 100%;
+}
+.box8{
+	background-image: url('media2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0,0.8);
+	opacity: 0.8;
+	width: 100%;
+	height: 65%;
+	margin-top: -2%;
+}
+
+.box8 .box9{
+	width: 38%;
+	margin-left: 12%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+.box8 .box10{
+	width: 38%;
+	margin-left: 50%;
+	height: 100%;
+	background-color: #ee163a;
+	margin-top: -32.16%;
+}
+</style>
+</head>
+
+<body>
+
+
+<div id="fullpage">
+	<div class="section">
+		<div class="head">
+         	
+         	<span class="title"><a href="index.html" style="color: #000;"> < /Young Tree ></a></span>
+
+         	<ul class="headlist">
+         		<li><a href="#" style="color: #000;">HOME</a>  </li>
+         		<li><a href="#section1" style="color: #000;transition: 2s;">ABOUT</a></li>
+         		
+         		<li><a href="#section2" style="color: #000;">REGISTER</a></li>
+         		<li><a href="#section3" style="color: #000;">GALLERY</a></li>
+         		<li><a href="#section4" style="color: #000;">CONTACT</a></li>
+                <li></li>
+                <li></li>
+         		</ul>
+         </div>
+
+
+
+
+	
+	<div class="slide" id="slide2" style="margin-top: -5.74%;">
+         <div style="width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);margin-top: 0%;padding-top: 8.4%;">
+         <div class="box3">
+
+         <a href="#">	<i class="fa fa-play-circle circle"></i></a>
+		</div>
+         <div class="box4">
+
+         	<span style="font-size:53px;font-family:tahoma;color:#ffffff;">Next Campaign</span><br><br>
+            
+             <div id="clock"></div>
+<br>
+            <button class="btn" style="font-size: 18px;padding-left: 10px;padding-right: 10px; padding-top: 4px;padding-bottom: 4px;margin-left: 2%;">See Details</button>
+            
+         </div>
+
+
+		<div class="foot2">
+			<div class="calm"><i class="fa fa-calendar cal"></i></div>
+			<div class="calm1"><span style="color:#59E442;font-size: 18px;font-family: tahoma; ">DATE</span><br><span style="color: white;font-size: 16px;font-family: sans-serif;">25-27 Jan 2015</span></div>
+			
+			<div class="calm2">&emsp;<i class="fa fa-map-marker cal "></i></div>
+			<div class="calm3"><span style="color:#59E442;font-size: 18px;font-family: tahoma; ">LOCATION</span><br><span style="color: white;font-size: 16px;font-family: sans-serif;">45 Avenue - Buston Street, Romario Block</span></div>
+		     
+		    <div class="calm4">&emsp;<i class="fa fa-ticket cal"></i></div>
+			<div class="calm5"><span style="color:#59E442;font-size: 18px;font-family: tahoma; ">SEATS</span><br><span style="color: white;font-size: 16px;font-family: sans-serif;">300 SEATS</span></div>
+		 
+		    <div class="calm6">&emsp;<i class="fa fa-user cal"></i></div>
+			<div class="calm7"><span style="color:#59E442;font-size: 18px;font-family: tahoma; ">TRAINERS</span><br><span style="color: white;font-size: 16px;font-family: sans-serif;">100 TRAINERS</span></div>
+		 
+		</div>     
+	</div></div>
+	
+ 	</div>
+	
+	<div class="section" id="section1">
+		<br>
+        <div style="background-color: rgba(0,0,0,0.1);width: 75%;height: 53%;border-radius: 10px;margin-left: 12.5%;box-shadow: 10px 10px 20px #b0bec5;margin-top: -5%;    ">
+	<br>	<span style="font-size: 62px;font-family:roboto;color: #000;margin-left: 2.5%;"><u>Andhra Pradesh</u></span>
+		<br><br>
+		<div>
+
+      <span style="font-size: 32px;font-family:tahoma;color: #000;margin-left: 2.5%;"><i>About the state</i></span>
+<br>
+<br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;">Andhra Pradesh became the 8th largest state in India, geographical area wise;</span> <br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;"> with an area of
+162440.Km2
+ * after the Andhra Pradesh Reorganisation Act,</span> <br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;">2014. Telangana state comprising 10 districts
+from north-western Andhra Pradesh </span> <br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;">became 29th state of India. The new state of Andhra Pradesh and</span><br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;"> Telangana came into existence on 2nd June 2014.
+Andhra Pradesh is bordered by</span> <br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;"> Telangana in the northwest, Chhattisgarh and Odisha in the north, the</span><br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;">
+Bay of Bengal in the east, Tamil Nadu in the south and Karnataka in the west.</span> <br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;">
+Andhra Pradesh has 36,914.7 Km2 * of notified forest land, which is</span><br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;"> 22.73% of the Geographical
+area. The population of the state is 49.66 million </span> <br><span style="font-size: 16px;font-family:tahoma;color: #000;margin-left: 2.5%;">(2011 census) which occupies 10th place in the country      
+      </span>
+      <img src="1.png" width="290px" height="290px" style="float: right;margin: -23% 9%;">
+       </div> </div>
+	</div>
+
+
+
+
+
+
+
+
+    <div class="section">
+        <div class="slide" >
+        <br>
+        <div style="background-color: rgba(255,255,255,0.1);width: 75%;height: 53%;border-radius: 10px;margin-left: 12.5%;box-shadow: 10px 10px 20px #b0bec5;margin-top: -5%;    ">
+    <br>    <span style="font-size: 62px;font-family:roboto;color: #ccc;margin-left: 2.5%;"><u>Ananthapur Division</u></span>
+        <br><br>
+        <div>
+
+      <span style="font-size: 32px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"><i>About the forest division</i></span>
+<br>
+<br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">Ananthapur Forest Division lies in the South Western part of Andhra Pradesh</span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">
+ between latitudes
+130
+40’52.32” and 150
+14’0.24”N and longitudes 760</span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">
+45’39.96” and 780
+ 28’ 14.52”E. Geographical Area of
+the Division (and the District) is 19130  </span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">km2
+. The Division’s northern and central portions are a high plateau,
+generally undulating with </span><br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"> 
+ large granite rocks or low hill ranges rising occasionally above its surface. In the
+southern portion </span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">of the district, the surface is hilly. Six rivers flow through the district. These are Penna,</span><br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">
+
+Chithravathi, Vedavathi, Papagni, Swarnamukhi and Thadakaleru.</span> <br>
+      <img src="2.png" width="290px" height="290px" style="float: right;margin: -23% 9%;">
+       </div> </div>
+    </div>
+
+
+    <div class="slide" >
+        <br><br><br>
+        <div style="background-color: rgba(255,255,255,0.1);width: 80%;height: 73%;border-radius: 10px;margin-left: 10%;box-shadow: 10px 10px 20px #b0bec5;margin-top: -6%;    ">
+    <br>    <!-- <span style="font-size: 62px;font-family:roboto;color: #ccc;margin-left: 2.5%;"><u>Ananthapur Division</u></span>
+         -->
+        <div><br>
+
+      <span style="font-size: 32px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"><i>Comparison of forest cover</i></span>
+<br>
+<br><img src="3.png" width="390px" height="360px" style="margin: -30% 2%;">
+<img src="4.png" width="390px" height="360px" style="float: right;margin: 2% 2%;">
+       </div> </div>
+    </div>
+</div>
+ 
+
+
+
+<div class="section">
+        <div class="slide" >
+        <br>
+        <div style="background-color: rgba(255,255,255,0.1);width: 75%;height: 53%;border-radius: 10px;margin-left: 12.5%;box-shadow: 10px 10px 20px #b0bec5;margin-top: -5%;    ">
+    <br>    <span style="font-size: 62px;font-family:roboto;color: #ccc;margin-left: 2.5%;"><u>Chittor West Division</u></span>
+        <br><br>
+        <div>
+
+      <span style="font-size: 32px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"><i>About the forest division</i></span>
+<br>
+<br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">Chittoor West Forest Division lies in the Southern Part of Andhra Pradesh between latitudes</span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">
+ 
+120 37’ 22” and 130 59’ 37.76”N and longitudes 780 40’ 12” and 790 08’ 35.52” E.  </span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">
+Geographical area of the
+Division is 7944 Km2
+ which is 52.32%  of the geographical area of the </span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">District. Terrain can be roughly divided into Hills and plateaus and Outer slopes and </span><br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"> 
+ 
+Outliners. The Eastern Ghats traverse this division from South-West to North–East. Palmaner,</span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"> Punganur, Madanapalli Plateaus are constituents of the Mysore
+Plateau. The elevation of the</span><br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">
+Division varies from 305 m on plains to 1377 m on the hills. One of the
+prominent hills in</span> <br><span style="font-size: 16px;font-family:tahoma;color: #ccc;margin-left: 2.5%;">the Division is Horsley Hill 1314 m above MSL.</span>
+      <img src="2.png" width="290px" height="290px" style="float: right;margin: -23% 9%;">
+       </div> </div>
+    </div>
+
+
+    <div class="slide" >
+        <br><br><br>
+        <div style="background-color: rgba(255,255,255,0.1);width: 80%;height: 73%;border-radius: 10px;margin-left: 10%;box-shadow: 10px 10px 20px #b0bec5;margin-top: -6%;    ">
+    <br>    <!-- <span style="font-size: 62px;font-family:roboto;color: #ccc;margin-left: 2.5%;"><u>Ananthapur Division</u></span>
+         -->
+        <div><br>
+
+      <span style="font-size: 32px;font-family:tahoma;color: #ccc;margin-left: 2.5%;"><i>Comparison of forest cover</i></span>
+<br>
+<br><img src="3.png" width="390px" height="360px" style="margin: -30% 2%;">
+<img src="4.png" width="390px" height="360px" style="float: right;margin: 2% 2%;">
+       </div> </div>
+    </div>
+</div>
+  
+
+
+
+
+
+
+	<div class="section" id="section2">
+        <br>
+        <div style="width: 75%;height: 80%;background-color: rgba(0,0,0,0.1);border-radius: 10px;margin-left: 12.5%;box-shadow: 10px 10px 20px #b0bec5;margin-top: 5%;">
+            <br>
+		<div style="margin-top: 0%;margin-left: 2%;"><span style="font-size: 38px;color:#ffffff;font-family: tahoma;">JOIN THE </span><span style="font-size: 38px;color:#ee163a;font-family: tahoma;">CAMPAIGN</span>
+	    <hr style="width: 5.5%;height: 0.1px;border: 2px solid #ee163a;margin-left: 0;margin-top: 1.7%;"><br>
+		
+	    </div>
+         
+        
+
+        <div class="slide" id="slide3" style="margin-top: -1.94%;">
+          <div style="margin-top: -25%;"> <div class="box5" style="margin-top: -10%;"><span style="font-size:105px;font-family:oswald;color:#ffffff;"> 25</span><sup style="font-size: 45px;color: #ffffff;">&nbsp;- 27</sup>
+             <span style="font-size:45px;font-family:TAHOMA;color:#ffffff;">&emsp; JAN <br>&emsp;2015</span>
+        </div>
+         <div class="box6">
+
+       <span style="font-size:53px;font-family:tahoma;color:#ffffff;">Be a Volunteer!</span><br><br>
+    <form>        <input type="text" name="fname" placeholder="Full Name" class="input1">
+            <br><br>
+            <input type="email" name="email" placeholder="Email Address" class="input1">
+            <br><br><input type="number" name="num" placeholder="Phone Number" class="input1">
+<br><br>
+            <button class="btn"><b>REGISTER NOW</b></button>
+  </form>   </div> </div><img src="cartoon1.png" height="400px" width="450px" style="margin-left: 60%;margin-top: -40%;">  </div>   
+     </div>
+        
+ 
+
+    </div>
+	<div class="section" id="section3">
+		<div class="second" style="margin-top: -5%;"><hr style="width: 10%;height: 0.1px;border:2px solid white;margin-left: 44%"></div>
+		<br>
+		<span style="font-size: 42px;font-family:tahoma;color: #ffffff;margin-left: 39.5%;">MEDIA CENTER</span>
+        <div class="team-area2">
+        <div><div class="container" style="width: 370px;height: 222px;">
+            <img src="download.png" alt="Avatar" class="image" style="width: 370px;height: 222px;">
+            <div class="overlay overlayBottom">
+                <div class="text"><a href="#"><i class="fa fa-bookmark" style="font-size: 60px;color: #222222;"></i></a></div>
+            </div>
+        </div>
+        <div style="width: 326px;height: 208px;background-color: #ffffff;margin-top: -3.5px;padding-left: 6%;padding-right: 6%;"> 
+             <i class="fa fa-calendar" style="font-size: 21px;color: #ee163a;margin-top: 9%;"></i><span style="margin-left: 3.5%;font-family: sans-serif;font-size: 14px;">25 Jan 2015</span>
+
+             <i class="fa fa-map-marker" style="font-size: 21px;color: #ee163a;margin-top: 9%;margin-left: 14%;"></i><span style="margin-left: 3.5%;font-family: sans-serif;font-size: 14px;">London</span></i><br><br>
+             <span style="font-family: tahoma;font-size: 15px;line-height: 23px;color: #000000;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ips dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+        </div>
+        </div>
+        
+        <div><div class="container" style="width: 370px;height: 222px;">
+            <img src="download.png" alt="Avatar" class="image" style="width: 370px;height: 222px;">
+            <div class="overlay overlayBottom">
+                <div class="text"><a href="#"><i class="fa fa-bookmark" style="font-size: 60px;color: #222222;"></i></a></div>
+            </div>
+        </div>
+        <div style="width: 326px;height: 208px;background-color: #ffffff;margin-top: -3.5px;padding-left: 6%;padding-right: 6%;"> 
+             <i class="fa fa-calendar" style="font-size: 21px;color: #ee163a;margin-top: 9%;"></i><span style="margin-left: 3.5%;font-family: sans-serif;font-size: 14px;">25 Jan 2015</span>
+
+             <i class="fa fa-map-marker" style="font-size: 21px;color: #ee163a;margin-top: 9%;margin-left: 14%;"></i><span style="margin-left: 3.5%;font-family: sans-serif;font-size: 14px;">London</span></i><br><br>
+             <span style="font-family: tahoma;font-size: 15px;line-height: 23px;color: #000000;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ips dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+        </div>
+        </div>
+
+        <div><div class="container" style="width: 370px;height: 222px;">
+            <img src="download.png" alt="Avatar" class="image" style="width: 370px;height: 222px;">
+            <div class="overlay overlayBottom">
+                <div class="text"><a href="#"><i class="fa fa-bookmark" style="font-size: 60px;color: #222222;"></i></a></div>
+            </div>
+        </div>
+        <div style="width: 326px;height: 208px;background-color: #ffffff;margin-top: -3.5px;padding-left: 6%;padding-right: 6%;"> 
+             <i class="fa fa-calendar" style="font-size: 21px;color: #ee163a;margin-top: 9%;"></i><span style="margin-left: 3.5%;font-family: sans-serif;font-size: 14px;">25 Jan 2015</span>
+
+             <i class="fa fa-map-marker" style="font-size: 21px;color: #ee163a;margin-top: 9%;margin-left: 14%;"></i><span style="margin-left: 3.5%;font-family: sans-serif;font-size: 14px;">London</span></i><br><br>
+             <span style="font-family: tahoma;font-size: 15px;line-height: 23px;color: #000000;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ips dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+        </div>
+        </div>
+
+
+        </div>
+
+
+
+
+	</div>
+	<div class="section">
+		
+
+<div class="box8">
+     
+     <div class="box9">
+     	<br><br><br>
+     <span style="font-size: 36px;font-family: tahoma;color:#ffffff;word-spacing: 0.5px;margin-left: 6%;">GET YOUR TICKETS</span>
+<br><br><br>
+
+     <input type="text" name="fname" placeholder="Full Name" class="input1">
+            <br><br>
+            <input type="email" name="email" placeholder="Email Address" class="input1">
+            <br><br><input type="number" name="num" placeholder="Phone Number" class="input1">
+<br><br>
+            <button class="btn"><b>REGISTER NOW</b></button>
+     </div>
+     <div class="box10">hi</div>
+
+	
+</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="count/src/countdown.js"></script>
+
+  <script type="text/javascript">
+  	$('#clock').countdown('2019/10/13',function(event){
+  		var $this = $(this).html(event.strftime(''+'<div><span>%w</span><span>Weeks</span></div> '+'<div><span>%d</span><span>Days</span></div> '+'<div><span>%H</span><span>Hr</span></div> '+'<div><span>%M</span><span>Min</span></div> '+'<div><span>%S</span><span>Sec</span></div> '))
+  	})
+  </script>
+
+
+</body>
+
+
+
+</html>

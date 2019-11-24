@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#clock{
+			display: flex;
+			width: 470px;
+			margin: 0 auto;
+
+		}
+		#clock div{
+		    position: relative;
+		    width: 100px;
+		    padding: 20px;
+		    margin: 0 5px;
+		    background: #262626;
+		    color: #fff;
+		    border: 2px solid #000;	
+		}
+		#clock div:last-child{
+			background: #e91e63
+		}
+		#clock div:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			background: rgba(255,255,255,.2);
+		}
+		#clock div span{
+			display: block;
+			text-align: center;
+
+		}
+		#clock div span:nth-child(1){
+			font-size: 48px;
+			font-weight: 800;
+		}
+		#clock div span:nth-child(2){
+			font-size: 18px;
+			font-weight: 800;
+			margin-top: -10px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="clock"></div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <script src="count/src/countdown.js"></script>
+
+  <script type="text/javascript">
+  	$('#clock').countdown('2019/10/10',function(event){
+  		var $this = $(this).html(event.strftime(''+'<div><span>%w</span><span>Weeks</span></div> '+'<div><span>%d</span><span>Days</span></div> '+'<div><span>%H</span><span>Hr</span></div> '+'<div><span>%M</span><span>Min</span></div> '+'<div><span>%S</span><span>Sec</span></div> '))
+  	})
+  </script>
+ 
+</body>
+</html>
